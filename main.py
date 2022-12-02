@@ -29,4 +29,7 @@ search_icon = PhotoImage(file="images/awdadawwdad.png")
 my_image_icon = Button(image=search_icon, borderwidth=0, cursor="hand2", bg="#6f79c5")
 my_image_icon.place(x=440, y=33)
 
+logo_image = PhotoImage(file="images/icon.png")
+logo = Label(image=logo_image)
+logo.place(x=179, y=120)
 root.mainloop()
