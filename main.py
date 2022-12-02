@@ -32,4 +32,42 @@ my_image_icon.place(x=440, y=33)
 logo_image = PhotoImage(file="images/icon.png")
 logo = Label(image=logo_image)
 logo.place(x=179, y=120)
+
+# BOTTOM BOX
+
+frame_image = PhotoImage(file="images/bottom.png")
+frame_myimage = Label(image=frame_image)
+frame_myimage.pack(padx=5, pady=5, side=BOTTOM)
+
+# LABELS
+
+label1 = Label(root, text="WIND", font=("Helvetica", 15, "bold"), fg="black", bg="white")
+label1.place(x=100, y=380)
+
+label2 = Label(root, text="HUMIDITY", font=("Helvetica", 15, "bold"), fg="black", bg="white")
+label2.place(x=225, y=380)
+
+label3 = Label(root, text="DESCRIPTION", font=("Helvetica", 15, "bold"), fg="black", bg="white")
+label3.place(x=375, y=380)
+
+label4 = Label(root, text="PRESSURE", font=("Helvetica", 15, "bold"), fg="black", bg="white")
+label4.place(x=570, y=380)
+
+t = Label(font=("arial", 70, "bold"), fg="blue")
+t.place(x=400, y=150)
+c = Label(font=("arial", 15, "bold"))
+c.place(x=400, y=250)
+
+w = Label(text="...", font=("arial", 20, "bold"), bg="yellow")
+w.place(x=110, y=430)
+
+h = Label(text="...", font=("arial", 20, "bold"), bg="yellow")
+h.place(x=245, y=430)
+
+d = Label(text="...", font=("arial", 20, "bold"), bg="yellow")
+d.place(x=390, y=430)
+
+p = Label(text="...", font=("arial", 20, "bold"), bg="yellow")
+p.place(x=570, y=430)
+
 root.mainloop()
